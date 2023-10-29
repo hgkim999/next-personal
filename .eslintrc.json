@@ -1,0 +1,21 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["unused-imports"],
+  "rules": {
+    "semi": ["error", "always"],
+    "sort-vars": "error",
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-unused-vars": "error",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}

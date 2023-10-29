@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "kamikillerto.vscode-colorize",
+    "esbenp.prettier-vscode",
+    "tyriar.sort-lines",
+    "simonsiefke.svg-preview",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "wayou.vscode-todo-highlight",
+    "vscode-icons-team.vscode-icons",
+    "steoates.autoimport",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

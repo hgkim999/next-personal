@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  next-app:
+    container_name: next-app
+    build:
+      dockerfile: Dockerfile.dev
+
+    # Set environment variables directly in the docker-compose file
+    environment:
+      ENV_VARIABLE: ${ENV_VARIABLE}
+      NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
+
+    # Set envrionment variables based on the .env file
+    env_file:
+      - .env
+    volumes:
+      - ./next-app/src:/app/src
+      - ./next-app/public:/app/public
+    restart: always
+    ports:
+      - 3000:3000
