@@ -1,6 +1,11 @@
-import '@/styles/globals.css';
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
+import ContentWrapper from '@/components/content-wrapper';
+import HomeHeader from '@/components/main-nav';
+
+import '@/styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +21,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={clsx(
+          inter.className,
+          'max-w-screen flex max-h-screen flex-col',
+        )}
+      >
+        <HomeHeader />
+        <ContentWrapper>{children}</ContentWrapper>
+      </body>
     </html>
   );
 }

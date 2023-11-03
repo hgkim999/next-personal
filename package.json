@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "open http://localhost:3000; next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -11,9 +11,15 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "14.0.0",
+    "@radix-ui/react-scroll-area": "^1.0.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.291.0",
+    "next": "^14.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
