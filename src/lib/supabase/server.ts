@@ -1,3 +1,6 @@
+'server-only';
+
+import { Database } from '@/types/supabase';
 import {
   createServerClient as createClient,
   type CookieOptions,
@@ -5,9 +8,9 @@ import {
 import { cookies } from 'next/headers';
 
 export const createServerClient = (cookieStore: ReturnType<typeof cookies>) => {
-  return createClient(
+  return createClient<Database>(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.SUPABASE_SERVICE_KEY,
     {
       cookies: {
         get(name: string) {

@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { ScrollArea } from './ui/scroll-area';
+import { ScrollArea } from './shadcn-ui/scroll-area';
 
 type Props = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
