@@ -23,7 +23,7 @@ const NavLink = ({
   return (
     <Link
       className={cn(
-        'blur-[1.2px] transition duration-200 data-[active=true]:text-xl data-[active=true]:font-bold data-[active=true]:blur-none',
+        'flex items-center text-base blur-[1.2px] transition-all duration-200 hover:text-xl hover:blur-[0.5px] data-[active=true]:text-2xl data-[active=true]:font-bold data-[active=true]:blur-none',
         className,
       )}
       href={href}

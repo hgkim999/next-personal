@@ -10,7 +10,7 @@ const ContentWrapper = ({ className, children, ...otherProps }: Props) => {
   return (
     <div
       className={cn(
-        'flex max-h-full min-h-0 w-full min-w-full flex-1 overflow-auto',
+        'min-w-screen flex max-h-full min-h-0 w-full flex-1 overflow-auto',
         className,
       )}
       {...otherProps}

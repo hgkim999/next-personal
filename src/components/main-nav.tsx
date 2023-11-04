@@ -6,7 +6,7 @@ const MainNav = () => {
       <div className="flex gap-4">
         <NavLink href="/experiences">experiences</NavLink>
         <NavLink href="/">home</NavLink>
-        <NavLink href="/projects">project</NavLink>
+        <NavLink href="/projects">projects</NavLink>
       </div>
     </header>
   );

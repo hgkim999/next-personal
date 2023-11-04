@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.0.5",
+    "@supabase/ssr": "^0.0.5",
+    "@supabase/supabase-js": "^2.38.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.291.0",
