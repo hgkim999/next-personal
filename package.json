@@ -1,7 +1,10 @@
 {
-  "name": "tailwind-next-boilerplate-core",
+  "name": "samuelkim-next-personal-website",
+  "author": {
+    "name": "Samuel HyunGyu Kim",
+    "email": "hgkim999@gmail.com"
+  },
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "open http://localhost:3000; next dev",
     "build": "next build",
