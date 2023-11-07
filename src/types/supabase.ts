@@ -74,18 +74,21 @@ export interface Database {
       skills: {
         Row: {
           created_at: string;
+          experienced_since: string | null;
           id: number;
           name: string | null;
           yoe: number | null;
         };
         Insert: {
           created_at?: string;
+          experienced_since?: string | null;
           id?: number;
           name?: string | null;
           yoe?: number | null;
         };
         Update: {
           created_at?: string;
+          experienced_since?: string | null;
           id?: number;
           name?: string | null;
           yoe?: number | null;
