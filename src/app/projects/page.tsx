@@ -1,6 +1,6 @@
 type Props = {};
 
-const ProjectsPage = (props: Props) => {
+const ProjectsPage = (_props: Props) => {
   return <div className="">Projects Page</div>;
 };
 

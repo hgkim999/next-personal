@@ -5,7 +5,7 @@ import { ComponentProps } from 'react';
 
 type Props = Omit<ComponentProps<typeof IconLink>, 'icon'>;
 
-const EditButton = ({ target, className, ...rest }: Props) => {
+const EditButton = ({ className, ...rest }: Props) => {
   return (
     <IconLink
       className={cn('absolute right-0 top-0', className)}

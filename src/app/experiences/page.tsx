@@ -1,6 +1,4 @@
-type Props = {};
-
-const ExperiencePage = (props: Props) => {
+const ExperiencePage = () => {
   return <div className="">Experience Page</div>;
 };
 

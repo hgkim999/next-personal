@@ -15,6 +15,7 @@
     "update-types": "npx supabase gen types typescript --project-id \"zmxjsyqabqgjshjzrgil\" > src/types/supabase.ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-scroll-area": "^1.0.5",
@@ -31,8 +32,10 @@
     "pino": "^8.16.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -42,10 +45,13 @@
     "checkly": "^4.2.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "pino-pretty": "^10.2.3",
     "postcss": "^8",
+    "prettier": "^3.0.3",
     "prettier-plugin-organize-imports": "^3.2.3",
     "prettier-plugin-sort-json": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.6",

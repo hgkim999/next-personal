@@ -11,8 +11,8 @@ const HomePage = () => {
           8 YOE | Front-end Enthusiast, Full-stack Web Engineer
         </h2>
       </HomeSection>
-      <HomeSection>
-        <EditButton href="/skills" />
+      <HomeSection title="Expertise">
+        <EditButton href="/edit/skills" />
         <SkillList />
       </HomeSection>
     </main>

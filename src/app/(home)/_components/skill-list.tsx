@@ -1,11 +1,9 @@
 import { getSkills } from '@/services/skill.service';
 import SkillListItem from './skill-list-item';
 
-type Props = {};
-
 export const dynamic = 'force-dynamic';
 
-const SkillList = async (props: Props) => {
+const SkillList = async () => {
   const skills = await getSkills();
 
   return (
