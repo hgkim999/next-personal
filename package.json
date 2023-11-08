@@ -15,7 +15,11 @@
     "update-types": "npx supabase gen types typescript --project-id \"zmxjsyqabqgjshjzrgil\" > src/types/supabase.ts"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-scroll-area": "^1.0.5",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "@supabase/ssr": "^0.0.5",
     "@supabase/supabase-js": "^2.38.4",
     "class-variance-authority": "^0.7.0",
@@ -23,6 +27,7 @@
     "date-fns": "^2.30.0",
     "lucide-react": "^0.291.0",
     "next": "^14.0.1",
+    "next-plugin-svgr": "^1.1.9",
     "pino": "^8.16.1",
     "react": "^18",
     "react-dom": "^18",
@@ -30,7 +35,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

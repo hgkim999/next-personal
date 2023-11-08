@@ -15,7 +15,7 @@ const ContentWrapper = ({ className, children, ...otherProps }: Props) => {
       )}
       {...otherProps}
     >
-      <ScrollArea>{children}</ScrollArea>
+      <ScrollArea className="w-full">{children}</ScrollArea>
     </div>
   );
 };

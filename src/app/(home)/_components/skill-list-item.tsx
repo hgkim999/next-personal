@@ -11,11 +11,9 @@ const SkillListItem = ({ skill }: Props) => {
       : null;
 
   return (
-    <div className="overflow-hidden rounded-full border border-foreground">
+    <div className="overflow-hidden rounded-md border border-foreground">
       <span className="py-2 pl-4 pr-2">{skill.name}</span>
-      {yoe && (
-        <span className=" bg-foreground px-2 py-1 text-background">{yoe}</span>
-      )}
+      {yoe && <span className="py-1 pr-2 text-muted-foreground">{yoe}yoe</span>}
     </div>
   );
 };
