@@ -9,7 +9,7 @@ export async function getSkills() {
 
   const { data: skills, error } = await supabase.from('skills').select('*');
   if (error) {
-    throw new Error('Could not fetch ');
+    throw new Error('Could not fetch: ' + error);
   }
 
   return skills || [];
@@ -20,7 +20,7 @@ export async function upsertSkill(skillData: Skill) {
   const { error, data } = await supabase.from('skills').upsert(skillData);
 
   if (error) {
-    throw new Error('Could not update');
+    throw new Error('Could not update: ' + error);
   }
 
   return data;
@@ -34,7 +34,7 @@ export async function deleteSkill(skillId: Pick<Skill, 'id'>) {
     .eq('id', skillId);
 
   if (error) {
-    throw new Error('Could not delete');
+    throw new Error('Could not delete: ' + error);
   }
 
   return data;

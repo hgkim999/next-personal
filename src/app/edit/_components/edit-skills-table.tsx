@@ -9,9 +9,13 @@ import {
 import { Skill } from '@/types/skill';
 import { format } from 'date-fns';
 
-type Props = { skills: Skill[] };
+type Props = { skills: Skill[]; onClickRow?: (_skill: Skill) => void };
 
-const EditSkillsTable = ({ skills }: Props) => {
+const EditSkillsTable = ({ skills, onClickRow }: Props) => {
+  const handleClickRow = (skill: Skill) => () => {
+    onClickRow && onClickRow(skill);
+  };
+
   return (
     <Table>
       <TableHeader>
@@ -30,7 +34,11 @@ const EditSkillsTable = ({ skills }: Props) => {
             : null;
 
           return (
-            <TableRow key={skill.id}>
+            <TableRow
+              key={skill.id}
+              onClick={handleClickRow(skill)}
+              className="cursor-pointer"
+            >
               <TableCell>{skill.id}</TableCell>
               <TableCell>{skill.name}</TableCell>
               <TableCell>{experiencedSince}</TableCell>

@@ -8,7 +8,7 @@ const HomePage = () => {
       <HomeSection>
         <h1 className="text-5xl">SAMUEL KIM</h1>
         <h2 className="text-3xl">
-          8 YOE | Front-end Enthusiast, Full-stack Web Engineer
+          Front-end Enthusiast, Full-stack Web Engineer
         </h2>
       </HomeSection>
       <HomeSection title="Expertise">

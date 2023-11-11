@@ -16,7 +16,7 @@ const EditSkillsDialog = () => {
     <Dialog open={true} onOpenChange={handleOpenChange}>
       <DialogContent className="flex max-h-[85vh] max-w-full flex-col pb-0 md:max-w-3xl">
         <DialogHeader>Skills</DialogHeader>
-        <div className="min-h-0 w-full overflow-y-scroll pr-2 scrollbar scrollbar-track-transparent">
+        <div className="min-h-0 w-full overflow-y-scroll  scrollbar scrollbar-track-transparent">
           <EditSkillsCard />
         </div>
       </DialogContent>
