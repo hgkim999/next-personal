@@ -1,13 +1,7 @@
 'use client';
 
-import EditSkillsForm from '@/app/edit/_components/edit-skills-form';
-import { Button } from '@/components/ui/button';
-import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogHeader,
-} from '@/components/ui/dialog';
+import EditSkillsCard from '@/app/edit/_components/edit-skills-card';
+import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog';
 import { useRouter } from 'next/navigation';
 
 const EditSkillsDialog = () => {
@@ -20,12 +14,11 @@ const EditSkillsDialog = () => {
 
   return (
     <Dialog open={true} onOpenChange={handleOpenChange}>
-      <DialogContent>
+      <DialogContent className="flex max-h-[85vh] max-w-full flex-col pb-0 md:max-w-3xl">
         <DialogHeader>Skills</DialogHeader>
-        <EditSkillsForm />
-        <DialogFooter>
-          <Button>Save</Button>
-        </DialogFooter>
+        <div className="min-h-0 w-full overflow-y-scroll pr-2 scrollbar scrollbar-track-transparent">
+          <EditSkillsCard />
+        </div>
       </DialogContent>
     </Dialog>
   );

@@ -1,11 +1,11 @@
+import ContentWrapper from '@/components/content-wrapper';
+import HomeHeader from '@/components/main-nav';
+import ThemeSelector from '@/components/theme-selector';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Providers from './providers';
 
-import ContentWrapper from '@/components/content-wrapper';
-import HomeHeader from '@/components/main-nav';
-
-import ThemeSelector from '@/components/theme-selector';
 import '@/styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -32,10 +32,12 @@ export default function RootLayout({
       >
         <ThemeSelector />
         <HomeHeader />
-        <ContentWrapper>
-          {children}
-          {modal}
-        </ContentWrapper>
+        <Providers>
+          <ContentWrapper>
+            {children}
+            {modal}
+          </ContentWrapper>
+        </Providers>
       </body>
     </html>
   );

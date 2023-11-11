@@ -6,9 +6,10 @@ type Props = { skill: Skill };
 
 const SkillListItem = ({ skill }: Props) => {
   const yoe =
-    skill.yoe || !isNullish(skill.experienced_since)
+    skill.yoe ||
+    (!isNullish(skill.experienced_since)
       ? differenceInYears(Date.now(), new Date(skill.experienced_since!))
-      : null;
+      : null);
 
   return (
     <div className="overflow-hidden rounded-md border border-foreground">
